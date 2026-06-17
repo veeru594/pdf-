@@ -1,0 +1,37 @@
+# ── Secrets — NEVER commit the API key ──────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Python virtualenv & caches ──────────────────────────────────
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Runtime data — candidate PII stays OUT of the repo ───────────
+inbox/
+processed/
+reports/
+saved_reports/
+batch_status.json
+schedule_config.json
+
+# ── Sample / test offer letters (contain personal data) ─────────
+*.pdf
+
+# ── Local scratch / rendered images ─────────────────────────────
+_view_*.png
+*.tmp
+
+# ── OS / IDE ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

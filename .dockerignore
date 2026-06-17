@@ -1,0 +1,23 @@
+# Secrets — never bake the API key into the image
+.env
+
+# Local virtualenv and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Runtime data — candidate PII stays on the host, not in the image
+inbox/
+processed/
+reports/
+saved_reports/
+batch_status.json
+schedule_config.json
+
+# Sample/test offer letters
+*.pdf
+
+# Docs and local tooling
+*.md
+.dockerignore
+Dockerfile
